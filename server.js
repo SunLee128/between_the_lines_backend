@@ -1,7 +1,7 @@
 // express
 const express = require('express')
 const app = express()
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3001
 
 // handle cross-origin requests
 const cors = require('cors')
@@ -31,4 +31,4 @@ app.use('/api/reviews', reviewRoutes);
 //   res.json({ message: 'Awesome sauce - received burger layers!' })
 // })
 
-app.listen(PORT, () => { `server listening on port ${PORT}` })
+app.listen(PORT, () => { `server listening on port ${PORT}`})

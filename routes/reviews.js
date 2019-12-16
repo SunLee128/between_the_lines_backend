@@ -1,14 +1,14 @@
 var express = require('express');
 var router = express.Router();
-var helpers = require('../helpers/todos')
+var helpers = require('../helpers/reviews')
 
 router.route('/')
-.get(helpers.getTodos)
-.post(helpers.createTodo) 
+.get(helpers.getReviews)
+.post(helpers.createReview) 
 
-router.route('/:todoId')
-.get(helpers.getTodo)
-.put(helpers.updateTodo)
-.delete(helpers.deleteTodo)
+router.route('/:reviewId')
+.get(helpers.getReview)
+.put(helpers.updateReview)
+.delete(helpers.deleteReview)
 
 module.exports = router;

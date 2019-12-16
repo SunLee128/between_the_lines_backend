@@ -1,9 +1,13 @@
 const mongoose = require('mongoose');
 
 var reviewSchema = new mongoose.Schema({
-  name: {
+  user_name: {
     type: String
-  }, 
+  },
+  item: {
+    type: String,
+    required: 'Item cannot be blank'
+  },
   review: {
     type: String,
     required: 'Review cannot be blank'
